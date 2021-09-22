@@ -32,7 +32,7 @@ variable "private_key_path" {
 
 variable "dg_availability_domain_number" {
   description = "Describes the Availability domain number where the primary DBCS is located at"
-  
+
 }
 variable "primary_db_home_display_name" {
   description = "Describes the user friendly display name of primary DB"
@@ -88,7 +88,7 @@ variable "dg_network_compartment_name" {
 }
 
 variable "network_subnet_name" {
-  description = "Defines the subnet name associated to the artifact"  
+  description = "Defines the subnet name associated to the artifact"
 }
 
 

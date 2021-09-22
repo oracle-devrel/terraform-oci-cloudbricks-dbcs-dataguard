@@ -40,6 +40,6 @@ output "Apply_Rate" {
 
 output "dataguard_instance" {
   description = "Dataguard Instance for integration purposes"
-  value = oci_database_data_guard_association.dataguard
+  value       = oci_database_data_guard_association.dataguard
 }
 

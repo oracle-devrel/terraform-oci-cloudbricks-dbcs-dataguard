@@ -78,14 +78,14 @@ locals {
 
 
   # Subnet OCID local accessors
-  subnet_ocid        = length(data.oci_core_subnets.SUBNET.subnets) > 0 ? data.oci_core_subnets.SUBNET.subnets[0].id : null
-  
+  subnet_ocid = length(data.oci_core_subnets.SUBNET.subnets) > 0 ? data.oci_core_subnets.SUBNET.subnets[0].id : null
+
 
   # Compartment OCID Local Accessors
   compartment_id      = lookup(data.oci_identity_compartments.COMPARTMENTS.compartments[0], "id")
   nw_compartment_id   = lookup(data.oci_identity_compartments.NWCOMPARTMENTS.compartments[0], "id")
   availability_domain = data.oci_identity_availability_domain.AD.name
-  
+
   # VCN OCID Local Accessor 
   vcn_id = data.oci_core_vcns.VCN.virtual_networks[0].id
 
