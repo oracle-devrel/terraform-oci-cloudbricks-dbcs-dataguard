@@ -14,7 +14,9 @@ The following is the reference architecture associated to this brick
 - Pre-created DBCS Database
 
 ## Sample tfvars file
-´´´shell
+
+```shell
+
 ########## PROVIDER SPECIFIC VARIABLES ##########
 region           = "re-region-1"
 tenancy_ocid     = "ocid1.tenancy.oc1..asdf"
@@ -38,7 +40,8 @@ dg_network_compartment_name   = "MY_NETWORK_COMPARTMENT"
 protection_mode               = "MAXIMUM_PERFORMANCE"
 transport_type                = "ASYNC"
 ########## ARTIFACT SPECIFIC VARIABLES ##########
-´´´
+```
+
 ## Variable specific considerations
 - Variable `primary_db_home_display_name` and `primary_database_name` should be exactly the same as primary db with no exception
 - Above variables can not be bigger than 8 characters
